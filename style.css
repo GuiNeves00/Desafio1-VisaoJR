@@ -10,47 +10,37 @@ body {
 
 #container {
   display: grid;
-  place-content: center;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-top: 15%;
+  place-items: center;
+  height: 100vh;
 }
 
 #grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  place-content: center;
+  grid-row-gap: 20px;
   background-color: hsl(0, 0%, 100%);
-  width: 45%;
-  margin: auto;
   border-radius: 15px;
-  box-shadow: 5px 10px 20px hsl(220, 15%, 55%);
+  box-shadow: 5px 10px 20px hsl(220, 15%, 55%); /*juro q enxerguei sombra aqui*/
+  padding: 20px;
+  max-width: 280px;
 }
 
 img {
-  max-width: 250px;
-  place-self: center;
+  max-width: 100%;
   border-radius: 10px;
-  margin-top: 10px;
 }
 
 #p1 {
   color: hsl(218, 44%, 22%);
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 20px;
+  font-size: 24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 #p2 {
-  font-size: 15px;
+  font-size: 16px;
   color: hsl(220, 15%, 55%);
   text-align: center;
   margin-top: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
 }
